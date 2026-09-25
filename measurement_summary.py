@@ -8,12 +8,12 @@ review_count = 0
 for measurement in measurements:
     total += measurement
     if measurement >= review_threshold:
-        print("Measurement: ", measurement, "review")
+        print("Measurement:", measurement, "review")
         review_count += 1
     else:
-        print("Measurement: ", measurement, "within range")
+        print("Measurement:", measurement, "within range")
 mean = total/len(measurements)
-print("Count: ", len(measurements))
-print("Total: " , total)
-print("Mean: " , mean)
-print("Review count: ", review_count)
+print("Count:", len(measurements))
+print("Total:" , total)
+print("Mean:" , mean)
+print("Review count:", review_count)
